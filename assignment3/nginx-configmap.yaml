@@ -1,3 +1,4 @@
+# TODO: try to find a way to change this file back to using port 8080 instead of 3000
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -5,8 +6,8 @@ metadata:
 data:
   default.conf: |
     upstream backend {
-      server app-1:8080;
-      server app-2:8080;
+      server app-1:3000;
+      server app-2:3000;
     }
     
     server {
