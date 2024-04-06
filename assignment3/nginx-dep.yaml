@@ -1,4 +1,5 @@
 # TODO: this relates to the lab 7, 3-deployments, also check the profs announcement on D2L
+# TODO: The reason why this doesn't work yet is bc it needs functioning services, need to set up app-1 and app-2 services first
 
 # apiVersion: apps/v1
 # kind: Deployment
@@ -50,4 +51,4 @@ spec:
       volumes:
       - name: config-volume
         configMap:
-          name: nginx-config
+          name: nginx-configmap
