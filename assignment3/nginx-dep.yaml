@@ -1,29 +1,3 @@
-# TODO: this relates to the lab 7, 3-deployments, also check the profs announcement on D2L
-# TODO: The reason why this doesn't work yet is bc it needs functioning services, need to set up app-1 and app-2 services first
-
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: nginx-deployment
-# spec:
-#   selector:
-#     matchLabels:
-#       app: nginx
-#       run: my-nginx
-#   replicas: 5
-#   template:
-#     metadata:
-#       labels:
-#         app: nginx
-#         run: my-nginx
-#     spec:
-#       containers:
-#       - name: nginx
-#         image: nginx:1.14.2
-#         ports:
-#         - containerPort: 80
-
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
